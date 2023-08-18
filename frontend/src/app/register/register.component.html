@@ -30,30 +30,30 @@
                         <div *ngIf="!isLoggedIn" class="tab-pane fade show active" role="tabpanel">
                             <div class="text-center">
 
-                           <strong><!--<mat-icon>medical_services</mat-icon>--><h1>Home Rental System</h1><br> Registration Form</strong>
+                           <strong><!--<mat-icon>medical_services</mat-icon>--><h1>HOUSE RENTAL APPLICATION FORM</h1><br><H1>REGISTRATION FORM</H1></strong>
                             </div>
                             <hr>
                             <form (submit)="onRegister()">
                                 <!-- Username input -->
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="registerUsername"><i class="bi bi-person-circle"></i> Username</label>
-                                    <input type="text" id="registerUsername" class="form-control" [(ngModel)]="username" name="username" required />
+                                    <label class="form-label" for="registerUsername"><i class="bi bi-person-circle"></i> <b>Username</b></label>
+                                    <input type="text" id="registerUsername" class="form-control" [(ngModel)]="username" name="username" />
                                 </div>
                                      <!-- Username input -->
                                      <div class="form-outline mb-4">
-                                      <label class="form-label" for="registerEmail"><i class="bi bi-person-circle"></i> Email</label>
+                                      <label class="form-label" for="registerEmail"><i class="bi bi-person-circle"></i><B> Email</B></label>
                                       <input type="email" id="registerEmail" class="form-control" [(ngModel)]="email" name="email" />
                                   </div>
 
                                 <!-- Password input -->
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="registerPassword"><i class="bi bi-lock"></i> Password</label>
+                                    <label class="form-label" for="registerPassword"><i class="bi bi-lock"></i><b> Password</b></label>
                                     <input type="password" id="registerPassword" class="form-control" [(ngModel)]="password" name="password" />
                                 </div>
 
                                 <!-- Register As input -->
                                 <div class="form-group mb-4">
-                                    <label class="form-label" for="registerRepeatPassword"><i class="bi bi-person-plus"></i> Register As</label>
+                                    <label class="form-label" for="registerRepeatPassword"><i class="bi bi-person-plus"></i><b>Register As</b> </label>
                                     <div class="input-group">
                                         <select class="form-select" id="usertype" name="usertype" [(ngModel)]="usertype">
                                           <option value="owner" >OWNER</option>
@@ -61,12 +61,19 @@
                                         </select>
                                     </div>
                                 </div>
+
+
+
+
+
+
+
                                 <!-- Submit button -->
                                 <button type="submit" class="btn btn-primary btn-block mb-3"><i class="bi bi-box-arrow-in-right"></i> Sign Up</button>
 
                                 <!-- Login button -->
                                 <div class="text-center">
-                                    <p>Already a member? <a routerLink="/login"><i class="bi bi-door-open"></i> Login</a></p>
+                                    <p><strong>Already a member..?</strong> <a routerLink="/login"><i class="bi bi-door-open"></i> Login</a></p>
                                 </div>
                             </form>
 
@@ -74,19 +81,29 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
+           <div class="col-md-8">
                 <div class="text-center mt-5">
-                    <!-- <img src="../../assets/undraw_doctor_kw-5-l.svg" alt="Contact Us Image"> -->
+                    <!--<img src="../../assets/undraw_doctor_kw-5-l.svg" alt="Contact Us Image">
                     <section class="contact">
                       <h2>Contact Us</h2>
                       <p>If you have any questions or need assistance, feel free to reach out to us.</p>
-                      <p>Email: info@myhouseapp.com</p>
+                      <p>Email: info@mydoctorapp.com</p>
                       <p>Phone: 123-456-7890</p>
-                    </section>
+                    </section>-->
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+
+        <div class="container"> 
+              
+       <h1>CONTACT US</h1>
+       <strong><p>We're just a message away! Whenever you need help or have any queries, we're here for you.</p></strong>
+       <strong><p>Email: info@houserentapp.com</p></strong>
+       <strong><p>Phone: 949324779</p></strong>
+       </div>
+   </footer>
 
 </body>
 

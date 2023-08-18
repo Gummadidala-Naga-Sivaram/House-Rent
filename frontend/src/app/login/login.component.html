@@ -20,19 +20,19 @@
 <body>
 
     <div class="col-md-12">
+       
         <div class="row d-flex justify-content-center align-items-center p-5">
-            <div class="col-md-8">
-                <div class="text-center ">
-                    <!-- <img src="../../assets/undraw_medicine_b-1-ol.svg" alt="Contact Us Image"> -->
-                    <!--<section class="contact">
-                      <h2>Contact Us</h2>
-                      <p>If you have any questions or need assistance, feel free to reach out to us.</p>
-                      <p>Email: info@myhouseapp.com</p>
-                      <p>Phone: 123-456-7890</p>
+                
+               <!-- <div class="text-center">-->
+                    
+                    <!-- <img src="../../assets/undraw_medicine_b-1-ol.svg" alt="Contact Us Image"> 
+                    <section class="contact " >
+                        
+                      <h1>Contact Us</h1>
+                      <p><b>We're just a message away! Whenever you need help or have any queries, we're here for you.</b></p>
+                      <p><b>Email: info@houserentapp.com</b></p>
+                      <p><b>Phone: 949324779</b></p>
                     </section>-->
-                    <img src="https://www.investopedia.com/thmb/OQxvtmsJwBCy6kVw86E-ooDRVqs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/rent_house_73089751-5bfc333346e0fb002602ddbe.jpg">
-                </div>
-            </div>
             <div class="col-md-4 border bg-light text-dark">
                 <div class="mybox container  my-5">
                     <!-- Pills content -->
@@ -40,24 +40,24 @@
 
                         <div *ngIf="!isLoggedIn" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-login">
                             <div class="text-center">
-                              <strong><!--<mat-icon>medical_services</mat-icon>--><h1>House Rental Application Form</h1><br>Login Form</strong>
+                              <strong><!--<mat-icon>medical_services</mat-icon>--> <h1>HOUSE RENTAL APPLICATION FORM</h1><br><H1>LOGIN FORM</H1></strong>
                             </div>
                             <hr>
                             <form (submit)="login()">
                                 <!-- Email input -->
                                 <div class="form-group mb-4">
-                                    <label class="form-label" for="loginName"><i class="bi bi-person"></i> Enter Username</label>
+                                    <label class="form-label" for="loginName"><i class="bi bi-person"></i> <b>Enter Username</b></label>
                                     <input type="email" id="loginName" class="form-control" [(ngModel)]="username" name="username" />
                                 </div>
 
                                 <!-- Password input -->
                                 <div class="form-group mb-4">
-                                    <label class="form-label" for="loginPassword"><i class="bi bi-lock"></i> Enter Password</label>
+                                    <label class="form-label" for="loginPassword"><i class="bi bi-lock"></i><b>Enter Password</b> </label>
                                     <input type="password" id="loginPassword" class="form-control" [(ngModel)]="password" name="password" />
                                 </div>
 
                                 <div class="form-group mb-4">
-                                    <label class="form-label" for="loginPassword"><i class="bi bi-person-circle"></i> Login As</label>
+                                    <label class="form-label" for="loginPassword"><i class="bi bi-person-circle"></i> <b>Login As</b></label>
                                     <div class="input-group">
                                         <select class="form-select" id="usertype" name="usertype" [(ngModel)]="usertype">
                                           <option value="owner">Owner</option>
@@ -68,18 +68,38 @@
 
 
                                 <!-- Submit button -->
-                                <button type="submit" class="btn btn-primary btn-block mb-4"><i class="bi bi-box-arrow-in-right"></i> Sign in</button>
+                                <button type="submit"  class="btn btn-primary btn-block mb-4"><i class="bi bi-box-arrow-in-right"></i> Sign in</button>
 
                                 <!-- Register buttons -->
                                 <div class="text-center">
-                                    <p>Not a member? <a routerLink="/register"><i class="bi bi-person-plus"></i> Register</a></p>
+                                    <p><strong>Not a member..?</strong><a routerLink="/register"><i class="bi bi-person-plus"></i> Register</a></p>
                                 </div>
+    
                             </form>
+                            
+
+
                         </div>
+                        
+
                     </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="text-center mt-5">
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+
+        <div class="container">        
+        <h1>CONTACT US</h1>
+        <strong><p>We're just a message away! Whenever you need help or have any queries, we're here for you.</p></strong>
+        <strong><p>Email: info@houserentapp.com</p></strong>
+        <strong><p>Phone: 949324779</p></strong>
+        </div>
+    </footer>
 </body>
 </html>

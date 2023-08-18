@@ -61,11 +61,11 @@ export class PropertyAddComponent implements OnInit {
           localStorage.setItem('password', this.password); // store usertype in localStorage
           localStorage.setItem('username', this.username); // store usertype in localStorage
           this._isLoggedIn = true; // modify the private backing field
-        console.log('Property added successfully:', response);
+          alert(` Your Property listed,Now its Available For Renters..!`);
         // Reset form or perform other actions as needed
       },
       (error: any) => {
-        console.error('Failed to add property:', error);
+        alert('Failed to add property..!!');
         // Handle error scenario
       }
     );

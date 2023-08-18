@@ -98,12 +98,12 @@ export class PropertyOwnersComponent implements OnInit {
         .delete(`http://localhost:3000/properties/${property._id}`, { headers })
         .subscribe(
           (response: any) => {
-            console.log('Property deleted successfully:', response);
+            alert('Property deleted successfully..!!');
             // Refresh properties after successful deletion
             this.getProperties();
           },
           (error: any) => {
-            console.error('Error deleting property:', error);
+            alert('Error deleting property..!!');
           }
         );
     }
@@ -120,7 +120,7 @@ export class PropertyOwnersComponent implements OnInit {
         .put(`http://localhost:3000/properties/${property._id}`, property, { headers })
         .subscribe(
           (response: any) => {
-            console.log('Property status changed successfully:', response);
+            alert('Property status changed successfully..!!');
             // Refresh properties after successful status change
             this.getProperties();
           },
